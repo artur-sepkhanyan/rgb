@@ -10,8 +10,6 @@ function createTable(x,y){
             var colSpan = document.createElement("span");
             colSpan.appendChild(colText)
             col.appendChild(colSpan);
-            col.classList.add("tooltip"); 
-            colSpan.classList.add("tooltiptext"); 
             col.style.backgroundColor = `rgb(0,${i},${j})`;
             row.appendChild(col);   
         }
@@ -20,11 +18,10 @@ function createTable(x,y){
     }
     
     
-    myTable.appendChild(tbl);
-    tbl.setAttribute('border', '2');
-    tbl.classList.add("tbl");
+            myTable.appendChild(tbl);
+    
     
     
 }
-createTable(255,255);
+createTable(15,15);
 

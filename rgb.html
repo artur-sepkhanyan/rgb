@@ -6,21 +6,19 @@
     
     <title>Document</title>
     <style>
-        #myTable{
+        table{
             
+        margin: 0 auto;
+        overflow: auto;
+        border: 2px solid black;
         }
-        .tbl{
-            
-            margin: 0 auto;
-            overflow: auto;
-        }
-        .tooltip {
+        td {
         position: relative;
         border-bottom: 1px dotted black;
         padding: 10px;
         }
 
-        .tooltip .tooltiptext {
+        td span {
         visibility: hidden;
         width: 120px;
         background-color: black;
@@ -33,7 +31,7 @@
         z-index: 1;
         }
 
-        .tooltip:hover .tooltiptext {
+        td:hover span {
         visibility: visible;
         }
     </style>
